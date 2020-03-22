@@ -1,0 +1,16 @@
+t 305.0 50.0 E2 3 4 n
+t 170.0 50.0 upperbound n 5 5 n {[t+1,t+1]} s
+p 235.0 50.0 p2 0 n
+p 100.0 50.0 p1 0 n
+t 30.0 50.0 E1 0 2 n
+p 35.0 100.0 p0 1 n
+p 320.0 100.0 p3 1 n
+e p3 E2 1 n
+e p0 E1 1 n
+e p2 upperbound ?-1 n
+e p1 upperbound 1 n
+e E2 p2 1 n
+e E1 p1 1 n
+h upperbound_test
+
+

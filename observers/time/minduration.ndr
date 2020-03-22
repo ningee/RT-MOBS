@@ -1,0 +1,11 @@
+t 25.0 50.0 E1 0 w n
+p 105.0 50.0 p0 0 n
+t 190.0 50.0 minduration n 0 w n {[t-1,t-1]} s
+p 285.0 50.0 p1 0 n
+e p0 minduration ?-1 n
+e E1 p0 1 n
+e minduration 0.1085940524 41.23105625 p1 0.402799944 48.82622243 1 n
+e p1 minduration ?-1 n
+h minduration
+
+

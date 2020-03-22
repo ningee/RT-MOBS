@@ -1,0 +1,12 @@
+t 300.0 50.0 E2 0 w n
+t 165.0 50.0 lowerbound n 0 w n {[t-1,t-1]} s
+p 230.0 50.0 p2 0 n
+p 95.0 50.0 p1 0 n
+t 25.0 50.0 E1 0 w n
+e E1 p1 1 n
+e E2 p2 1 n
+e p1 lowerbound 1 n
+e p2 lowerbound ?-1 n
+h lowerbound
+
+

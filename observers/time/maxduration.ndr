@@ -1,0 +1,11 @@
+p 105.0 50.0 p0 0 n
+t 190.0 50.0 maxduration n 0 w n {[t+1,t+1]} s
+p 280.0 50.0 p1 0 n
+t 25.0 50.0 E1 0 w n
+e p0 maxduration ?-1 n
+e E1 p0 1 n
+e maxduration 0.1085940524 41.23105625 p1 0.402799944 48.82622243 1 n
+e p1 maxduration ?-1 n
+h maxduration
+
+
