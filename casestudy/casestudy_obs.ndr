@@ -1,0 +1,35 @@
+t 70.0 115.0 E1 1 2 w
+t 355.0 115.0 E2 4 5 s
+t 215.0 50.0 lowerbound n 3 3 s {} ne
+p 140.0 180.0 p7 0 n
+t 215.0 180.0 upperbound n 6 6 s {} ne
+p 285.0 180.0 p8 0 n
+t 450.0 115.0 E3 8 10 w
+p 355.0 35.0 p2 1 e
+p 70.0 35.0 p1 1 w
+p 285.0 50.0 p6 0 n
+p 140.0 115.0 p3 0 e
+p 140.0 50.0 p5 0 n
+p 450.0 35.0 p0 1 w
+p 285.0 115.0 p4 0 w
+p 70.0 195.0 {} 0 n E1leadtoE2 s
+p 450.0 200.0 p9 0 w
+e E1 {} 1 n
+e E1 p3 1 n
+e E2 p4 1 n
+e E1 p7 1 n
+e E2 p8 1 n
+e p7 upperbound 1 n
+e p8 upperbound ?-1 n
+e p6 lowerbound ?-1 n
+e E1 p5 1 n
+e p5 lowerbound 1 n
+e p2 E2 1 n
+e p1 E1 1 n
+e E2 p6 1 n
+e p0 E3 1 n
+e {} 0.9365034392 110.6932699 E2 0.7482511149 91.00549434 1 n
+e E3 p9 1 n
+h casestudy_obs2
+
+

@@ -1,0 +1,15 @@
+p 70.0 30.0 p1 1 w
+t 70.0 105.0 E1 1 2 w
+p 200.0 30.0 p2 1 e
+t 200.0 105.0 E2 4 6 e
+p 285.0 30.0 p3 1 e
+t 285.0 105.0 E3 8 10 e
+p 135.0 105.0 {} 0 n E1leadtoE2 n
+e p3 E3 1 n
+e p1 E1 1 n
+e p2 E2 1 n
+e E1 {} 1 n
+e {} E2 1 n
+h casestudy
+
+
