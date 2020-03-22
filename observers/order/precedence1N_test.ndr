@@ -1,0 +1,28 @@
+p 245.0 110.0 p3 0 n
+p 105.0 110.0 p21 0 n
+p 30.0 110.0 p1 0 n
+p 170.0 110.0 p22 0 n
+t 30.0 165.0 E1 0 w n
+t 245.0 165.0 E3 0 w n
+t 210.0 50.0 diff3 n 0 0 e {} ne
+t 70.0 50.0 diff2 n 0 0 e {} ne
+t 135.0 165.0 E2 0 w n
+p 30.0 240.0 p0 1 n
+p 90.0 195.0 p2 0 n
+p 185.0 200.0 p4 0 n
+e p4 E3 1 n
+e E2 p4 1 n
+e p2 E2 1 n
+e E1 p2 1 n
+e p0 E1 1 n
+e p22 diff3 1 n
+e p21 diff2 1 n
+e E2 p21 1 n
+e E1 p1 1 n
+e E3 p3 1 n
+e p3 diff3 1 n
+e p1 diff2 1 n
+e E2 p22 1 n
+h precedence1N_test
+
+

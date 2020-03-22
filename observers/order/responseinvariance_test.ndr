@@ -1,0 +1,17 @@
+p 30.0 60.0 p1 0 n
+t 30.0 125.0 E1 0 w n
+p 200.0 60.0 p2 0 n
+t 200.0 125.0 E2 0 w n
+t 115.0 50.0 t3 0 0 n
+p 30.0 195.0 p7 1 n
+p 110.0 125.0 p8 0 n
+e p8 E2 1 n
+e E1 p8 1 n
+e p7 E1 1 n
+e p2 t3 1 n
+e p1 t3 1 n
+e E2 p2 1 n
+e E1 p1 1 n
+h responseinvariance_test
+
+

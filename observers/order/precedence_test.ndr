@@ -1,0 +1,17 @@
+p 50.0 30.0 p2 0 w
+t 140.0 30.0 diff 0 0 s
+p 225.0 30.0 p1 0 e
+t 50.0 105.0 E2 0 w n
+t 225.0 105.0 E1 0 w n
+p 45.0 185.0 p0 1 n
+p 135.0 135.0 p3 0 n
+e p3 E1 1 n
+e E2 p3 1 n
+e p0 E2 1 n
+e E2 p2 1 n
+e E1 p1 1 n
+e p2 diff 1 n
+e p1 diff 1 n
+h precedence_test
+
+

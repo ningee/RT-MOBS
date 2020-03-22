@@ -1,0 +1,9 @@
+p 210.0 30.0 p2 0 w
+p 30.0 30.0 p1 0 e
+t 210.0 100.0 E2 0 w n
+t 30.0 100.0 E1 0 w n
+e E2 p2 1 n
+e E1 p1 1 n
+h precedence
+
+

@@ -1,0 +1,12 @@
+p 30.0 50.0 p1 0 n
+t 30.0 115.0 E1 0 w n
+p 220.0 50.0 p2 0 n
+t 220.0 115.0 E2 0 w n
+t 125.0 50.0 diff 0 0 n
+e p2 diff 1 n
+e p1 diff 1 n
+e E2 p2 1 n
+e E1 p1 1 n
+h responseinvariance
+
+

@@ -1,0 +1,12 @@
+t 195.0 30.0 E2 0 w n
+t 30.0 30.0 E1 0 w n
+p 125.0 30.0 p4 0 s
+p 30.0 100.0 p3 10 e
+p 195.0 100.0 p5 1 n
+e p4 E1 ?-1 n
+e p5 E2 1 n
+e E2 p4 1 n
+e p3 E1 1 n
+h until_test
+
+
