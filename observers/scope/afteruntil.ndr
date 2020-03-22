@@ -1,0 +1,12 @@
+t 140.0 50.0 diff 0 0 n
+p 195.0 50.0 before 0 n
+t 255.0 50.0 E2 0 w n
+p 80.0 50.0 after 0 n
+t 25.0 50.0 E1 0 w n
+e E2 before 1 n
+e before diff 1 n
+e after diff 1 n
+e E1 after 1 n
+h afteruntil
+
+

@@ -1,0 +1,12 @@
+t 140.0 50.0 diff 0 0 n
+p 195.0 50.0 until 0 n
+t 255.0 50.0 E2 0 w n
+p 80.0 50.0 after 0 n
+t 25.0 50.0 E1 0 w n
+e E2 until 1 n
+e until diff 1 n
+e after diff 1 n
+e E1 after 1 n
+h afteruntil_test
+
+
