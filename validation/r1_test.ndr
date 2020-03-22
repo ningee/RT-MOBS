@@ -1,0 +1,16 @@
+t 30.0 110.0 E1 1 1 e
+p 30.0 170.0 init 1 e
+p 30.0 50.0 p1 0 n
+p 215.0 50.0 p2 0 n
+p 215.0 170.0 p4 1 w
+t 215.0 110.0 E2 3 3 w
+t 125.0 50.0 lowerbound n 1 1 s {} ne
+e p1 lowerbound 1 n
+e init E1 1 n
+e p2 lowerbound ?-1 n
+e E2 p2 1 n
+e E1 p1 1 n
+e p4 E2 1 n
+h r1_test
+
+

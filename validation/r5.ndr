@@ -1,0 +1,19 @@
+t 30.0 125.0 E1 0 w n
+t 75.0 125.0 E2 0 w n
+p 30.0 50.0 p1 0 n
+p 75.0 50.0 p4 0 n
+t 285.0 125.0 E3 0 w n
+p 285.0 50.0 p0 0 n
+t 175.0 50.0 upperbound n 1001 1001 s {} ne
+p 230.0 125.0 p3 0 w
+p 135.0 125.0 p2 0 e
+e E3 p3 1 n
+e E2 p2 1 n
+e E1 p1 1 n
+e E3 p0 1 n
+e p4 upperbound 1 n
+e p0 upperbound ?-1 n
+e E2 p4 1 n
+h r5
+
+

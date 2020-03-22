@@ -1,0 +1,16 @@
+t 160.0 100.0 upperbound n 101 101 s {} ne
+t 30.0 100.0 E1 0 w n
+t 280.0 100.0 E2 0 w n
+p 220.0 100.0 p2 0 n
+p 95.0 100.0 p1 0 n
+p 30.0 30.0 p3 0 e
+p 280.0 30.0 p4 0 w
+e E1 p3 1 n
+e E2 p4 1 n
+e E2 p2 1 n
+e p2 upperbound ?-1 n
+e p1 upperbound 1 n
+e E1 p1 1 n
+h r3
+
+
