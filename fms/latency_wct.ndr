@@ -1,16 +1,16 @@
-t 155.0 110.0 upperbound n 701 701 s {} ne
+t 155.0 110.0 upperbound n 700001 700001 s {} ne
 p 285.0 35.0 p3 0 w
 p 30.0 30.0 p2 0 e
 p 95.0 110.0 p0 0 n
 t 30.0 110.0 req s 0 w n {} ne
 p 220.0 110.0 p1 0 n
 t 285.0 110.0 display s 0 w n {} ne
-e display p3 1 n
-e req p2 1 n
-e req p0 1 n
-e display p1 1 n
-e p0 upperbound 1 n
 e p1 upperbound ?-1 n
+e p0 upperbound 1 n
+e display p1 1 n
+e req p0 1 n
+e req p2 1 n
+e display p3 1 n
 h latency_wct
 
 
