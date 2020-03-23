@@ -58,7 +58,7 @@ p 975.0 535.0 FM1a_output 0 n
 p 980.0 260.0 MFD1_output 0 n
 t 905.0 260.0 MFD1_exectr s 0 25000 n {} ne
 t 975.0 390.0 FM1a_MFD1_comm s 310 490 n {} ne
-t 1140.0 225.0 t0 701000 701000 n
+t 1140.0 225.0 t0 700001 700001 n
 p 1140.0 300.0 p1 0 n
 p 1140.0 145.0 p0 0 n
 p 435.0 715.0 NDB_input 0 n
@@ -70,95 +70,99 @@ p 355.0 460.0 FM1_hold 0 n
 t 520.0 395.0 M3_str 0 60000 n
 t 270.0 460.0 FM1_null s 0 0 n {} ne
 t 520.0 545.0 NDB_waittr s 100000 100000 n {} ne
-e M1_sp M1_str 1 n
-e M1_str MFD1_devitf 1 n
-e M1_str KU1_devitf 1 n
-e M3_sp M3_str 1 n
-e M3_str FM1a_devitf 1 n
-e M3_str FM1_devitf 1 n
-e M7_sp M7_str 1 n
-e M7_str NDB_devitf 1 n
-e KU1_devitf KU1_offset 1 n
-e KU1_input KU1_data 1 n
-e KU1_data KU1_execp 1 n
-e KU1_data KU1_waitp 1 n
-e KU1_hold KU1_null 1 n
-e KU1_input KU1_null ?-1 n
-e KU1_null KU1_waitp 1 n
-e KU1_waittr KU1_hold 1 n
-e KU1_execp KU1_exectr 1 n
-e KU1_exectr KU1_output 1 n
-e FM1_devitf FM1_offset 1 n
-e FM1_offset FM1_hold 1 n
-e FM1_input FM1_data 1 n
-e FM1_hold FM1_data 1 n
-e FM1_data FM1_execp 1 n
-e FM1_data FM1_waitp 1 n
-e FM1_hold FM1_null 1 n
-e FM1_input FM1_null ?-1 n
-e FM1_null FM1_waitp 1 n
-e FM1_waitp FM1_waittr 1 n
-e FM1_waittr FM1_hold 1 n
-e FM1_execp FM1_exectr 1 n
-e FM1_exectr FM1_output 1 n
-e NDB_devitf NDB_offset 1 n
-e NDB_offset NDB_hold 1 n
-e NDB_input NDB_data 1 n
-e NDB_hold NDB_data 1 n
-e NDB_data NDB_execp 1 n
-e NDB_data NDB_waitp 1 n
-e NDB_hold NDB_null 1 n
-e NDB_input NDB_null ?-1 n
-e NDB_null NDB_waitp 1 n
-e NDB_waitp NDB_waittr 1 n
-e NDB_waittr NDB_hold 1 n
-e NDB_execp NDB_exectr 1 n
-e NDB_exectr NDB_output 1 n
-e FM1a_devitf FM1a_offset 1 n
-e FM1a_offset FM1a_hold 1 n
-e FM1a_input FM1a_data 1 n
-e FM1a_hold FM1a_data 1 n
-e FM1a_data FM1a_execp 1 n
-e FM1a_data FM1a_waitp 1 n
-e FM1a_hold FM1a_null 1 n
-e FM1a_input FM1a_null ?-1 n
-e FM1a_null FM1a_waitp 1 n
-e FM1a_waitp FM1a_waittr 1 n
-e FM1a_waittr FM1a_hold 1 n
-e FM1a_execp FM1a_exectr 1 n
-e FM1a_exectr FM1a_output 1 n
-e MFD1_devitf MFD1_offset 1 n
-e MFD1_offset MFD1_hold 1 n
-e MFD1_input MFD1_data 1 n
-e MFD1_hold MFD1_data 1 n
-e MFD1_data MFD1_execp 1 n
-e MFD1_data MFD1_waitp 1 n
-e MFD1_hold MFD1_null 1 n
-e MFD1_input MFD1_null ?-1 n
-e MFD1_null MFD1_waitp 1 n
-e MFD1_waitp MFD1_waittr 1 n
-e MFD1_waittr MFD1_hold 1 n
-e MFD1_execp MFD1_exectr 1 n
-e MFD1_exectr MFD1_output 1 n
-e KU1_output KU1_FM1_comm 1 n
-e KU1_FM1_comm 0.7132207781 69.85699677 FM1_input 0.4120797975 85.7554663 1 n
-e FM1_output FM1_NDB_comm 1 n
-e FM1_NDB_comm NDB_input 1 n
-e NDB_FM1a_comm FM1a_input 1 n
-e FM1a_output FM1a_MFD1_comm 1 n
-e FM1a_MFD1_comm 0.4349202978 81.73891362 MFD1_input 0.8563615644 96.8297475 1 n
-e SP_initp SP_inittr 1 n
-e SP_inittr KU1_input 1 n
-e KU1_offset KU1_hold 1 n
-e KU1_hold KU1_data 1 n
-e KU1_waitp KU1_waittr 1 n
-e NDB_output NDB_FM1a_bag 1 n
-e NDB_FM1a_bag NDB_bag 1 n
-e NDB_bag NDB_FM1a_comm 1 n
-e SP_inittr 0.1629476492 209.575762 p0 0.4454994177 229.3141949 1 n
-e p0 t0 1 n
-e MFD1_exectr 0.9085036374 84.59905437 p1 0.5324704699 59.22837158 1 n
+p 435.0 330.0 p2 0 w
+p 905.0 330.0 p3 0 w
+e MFD1_exectr p3 1 n
+e SP_inittr p2 1 n
 e p1 t0 ?-1 n
+e MFD1_exectr 0.9085036374 84.59905437 p1 0.5324704699 59.22837158 1 n
+e p0 t0 1 n
+e SP_inittr 0.1629476492 209.575762 p0 0.4454994177 229.3141949 1 n
+e NDB_bag NDB_FM1a_comm 1 n
+e NDB_FM1a_bag NDB_bag 1 n
+e NDB_output NDB_FM1a_bag 1 n
+e KU1_waitp KU1_waittr 1 n
+e KU1_hold KU1_data 1 n
+e KU1_offset KU1_hold 1 n
+e SP_inittr KU1_input 1 n
+e SP_initp SP_inittr 1 n
+e FM1a_MFD1_comm 0.4349202978 81.73891362 MFD1_input 0.8563615644 96.8297475 1 n
+e FM1a_output FM1a_MFD1_comm 1 n
+e NDB_FM1a_comm FM1a_input 1 n
+e FM1_NDB_comm NDB_input 1 n
+e FM1_output FM1_NDB_comm 1 n
+e KU1_FM1_comm 0.7132207781 69.85699677 FM1_input 0.4120797975 85.7554663 1 n
+e KU1_output KU1_FM1_comm 1 n
+e MFD1_exectr MFD1_output 1 n
+e MFD1_execp MFD1_exectr 1 n
+e MFD1_waittr MFD1_hold 1 n
+e MFD1_waitp MFD1_waittr 1 n
+e MFD1_null MFD1_waitp 1 n
+e MFD1_input MFD1_null ?-1 n
+e MFD1_hold MFD1_null 1 n
+e MFD1_data MFD1_waitp 1 n
+e MFD1_data MFD1_execp 1 n
+e MFD1_hold MFD1_data 1 n
+e MFD1_input MFD1_data 1 n
+e MFD1_offset MFD1_hold 1 n
+e MFD1_devitf MFD1_offset 1 n
+e FM1a_exectr FM1a_output 1 n
+e FM1a_execp FM1a_exectr 1 n
+e FM1a_waittr FM1a_hold 1 n
+e FM1a_waitp FM1a_waittr 1 n
+e FM1a_null FM1a_waitp 1 n
+e FM1a_input FM1a_null ?-1 n
+e FM1a_hold FM1a_null 1 n
+e FM1a_data FM1a_waitp 1 n
+e FM1a_data FM1a_execp 1 n
+e FM1a_hold FM1a_data 1 n
+e FM1a_input FM1a_data 1 n
+e FM1a_offset FM1a_hold 1 n
+e FM1a_devitf FM1a_offset 1 n
+e NDB_exectr NDB_output 1 n
+e NDB_execp NDB_exectr 1 n
+e NDB_waittr NDB_hold 1 n
+e NDB_waitp NDB_waittr 1 n
+e NDB_null NDB_waitp 1 n
+e NDB_input NDB_null ?-1 n
+e NDB_hold NDB_null 1 n
+e NDB_data NDB_waitp 1 n
+e NDB_data NDB_execp 1 n
+e NDB_hold NDB_data 1 n
+e NDB_input NDB_data 1 n
+e NDB_offset NDB_hold 1 n
+e NDB_devitf NDB_offset 1 n
+e FM1_exectr FM1_output 1 n
+e FM1_execp FM1_exectr 1 n
+e FM1_waittr FM1_hold 1 n
+e FM1_waitp FM1_waittr 1 n
+e FM1_null FM1_waitp 1 n
+e FM1_input FM1_null ?-1 n
+e FM1_hold FM1_null 1 n
+e FM1_data FM1_waitp 1 n
+e FM1_data FM1_execp 1 n
+e FM1_hold FM1_data 1 n
+e FM1_input FM1_data 1 n
+e FM1_offset FM1_hold 1 n
+e FM1_devitf FM1_offset 1 n
+e KU1_exectr KU1_output 1 n
+e KU1_execp KU1_exectr 1 n
+e KU1_waittr KU1_hold 1 n
+e KU1_null KU1_waitp 1 n
+e KU1_input KU1_null ?-1 n
+e KU1_hold KU1_null 1 n
+e KU1_data KU1_waitp 1 n
+e KU1_data KU1_execp 1 n
+e KU1_input KU1_data 1 n
+e KU1_devitf KU1_offset 1 n
+e M7_str NDB_devitf 1 n
+e M7_sp M7_str 1 n
+e M3_str FM1_devitf 1 n
+e M3_str FM1a_devitf 1 n
+e M3_sp M3_str 1 n
+e M1_str KU1_devitf 1 n
+e M1_str MFD1_devitf 1 n
+e M1_sp M1_str 1 n
 h latency_mapping_wct
 
 
